@@ -1,8 +1,6 @@
 body {
 	align-items: center;
 	color: white;
-	cursor: pointer;
-
 	font-family: "Press Start 2P", monospaced;
 	font-size: 50px;
 	background-color: black;
@@ -12,17 +10,16 @@ body {
 .image {
 	width: 800px;
 	margin-left: 50%;
-	margin-top: -200px;
+	margin-top: -700px;
 }
 .header {
 	margin-left: 20%;
-	position: absolute;
 	margin-top: 400px;
 }
 .textFlex {
 	font-size: 17px;
 	width: auto;
-	margin: 100px;
+	margin: 0px 100px;
 	display: flex;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 100;
@@ -34,4 +31,11 @@ body {
 }
 h2.right {
 	margin-top: 300px;
+}
+.parallax {
+	margin-top: 60%;
+}
+
+.img {
+	width: 10%;
 }

@@ -1,21 +1,23 @@
 import "./App.css";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 //import { gsap } from "gsap";
 
 import Animation from "./js/Animation.tsx";
 import Image from "./assets/earthWhole.jpg";
-import Text1 from "./components/StartText.tsx";
+import ParallaxText from "./components/ParallaxText.tsx";
+import Raket from "./components/Raket.tsx";
 
 function App() {
 	return (
 		<>
+			<div></div>
 			<div className="header">
 				<Animation></Animation>
 			</div>
 			<img className="image" src={Image} alt="Earth" />
-
-			<Text1></Text1>
+			<div></div>
+			<ParallaxText></ParallaxText>
+			<Raket></Raket>
 		</>
 	);
 }

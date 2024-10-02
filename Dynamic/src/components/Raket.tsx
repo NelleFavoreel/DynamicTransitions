@@ -5,11 +5,18 @@ function Raket() {
 	const [refSlideIn1, slideIn1] = useInView(
 		() => ({
 			from: {
-				transform: "translateX(-100%)", // Start buiten het scherm aan de linkerkant
+				transform: "translate(-100%, 100%)", // Start linksonder (X naar links, Y naar beneden)
 			},
 			to: {
-				transform: "translateX(600%)", // Eindigt buiten het scherm aan de rechterkant
+				transform: "translate(1000%, -100%)", // Eindigt rechtsboven (X naar rechts, Y naar boven)
 			},
+			config: {
+				tension: 10, // Lagere snelheid
+				friction: 50, // Hogere wrijving
+				duration: 4000, // Totale duur van de animatie
+			},
+			reset: false, // Reset de animatie zodat deze opnieuw start
+			loop: false, // Zorgt ervoor dat de animatie continu herhaalt
 		}),
 		{}
 	);

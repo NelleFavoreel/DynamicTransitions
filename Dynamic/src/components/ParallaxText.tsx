@@ -6,6 +6,7 @@ import Animation from "../js/Animation";
 import Image from "../assets/earthWhole.jpg";
 import Text2 from "./Explenation";
 import NewScreen from "./NewScreen";
+import Text3 from "./Sound";
 
 function ParallaxComponent() {
 	const [showNewScreen, setShowNewScreen] = useState(false);
@@ -18,7 +19,7 @@ function ParallaxComponent() {
 				</div>
 			)}
 
-			<Parallax className="parallax" pages={4} style={{ top: "0", left: "0" }}>
+			<Parallax className="parallax" pages={5} style={{ top: "0", left: "0" }}>
 				<ParallaxLayer offset={0} speed={0}>
 					<div className="header">
 						<Animation />
@@ -34,8 +35,11 @@ function ParallaxComponent() {
 				<ParallaxLayer offset={2} speed={1}>
 					<Text2 />
 				</ParallaxLayer>
+				<ParallaxLayer offset={3} speed={1}>
+					<Text3 />
+				</ParallaxLayer>
 				<ParallaxLayer
-					offset={3}
+					offset={4}
 					speed={0}
 					style={{
 						display: "flex",
@@ -45,7 +49,7 @@ function ParallaxComponent() {
 					}}
 				>
 					<button onClick={() => setShowNewScreen(true)} className="button">
-						Toon Nieuwe Scherm
+						Wie zit er vast?
 					</button>
 				</ParallaxLayer>
 			</Parallax>

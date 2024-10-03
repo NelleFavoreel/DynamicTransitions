@@ -1,9 +1,9 @@
 // src/components/TypeMachine.js
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const TypeMachine = ({ speed = 80 }) => {
 	const testerRef = useRef(null); // Gebruik useRef om de DOM-elementen bij te houden
-	const innerText = "Hi, this is a test."; // Dit is de tekst die we willen typen
+	const innerText = "Astronauten zitten vast in de ruimte."; // Dit is de tekst die we willen typen
 
 	// Typmachine functie
 	const type = (element) => {

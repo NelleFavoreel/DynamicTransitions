@@ -35,9 +35,6 @@ function Text1() {
 		<>
 			<div className="textFlex">
 				<div>
-					<animated.h1 className="left" ref={refSlideIn} style={slideIn}>
-						Hoe?
-					</animated.h1>
 					<animated.h2 className="left" ref={refSlideIn} style={slideIn}>
 						De astronauten Butch Wilmore en Suni Williams vertrokken in juni met de eerste vlucht van de raket Starliner naar het ISS. Daarvoor waren er al problemen met het voertuig. Twee lanceringen werden uitgesteld vanwege problemen.
 					</animated.h2>

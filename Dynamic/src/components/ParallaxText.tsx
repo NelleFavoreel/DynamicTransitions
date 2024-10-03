@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Text1 from "./StartText";
 import Raket from "./Raket";
@@ -29,7 +29,7 @@ function ParallaxComponent() {
 				<ParallaxLayer offset={1} speed={0}>
 					<Text1 />
 				</ParallaxLayer>
-				<ParallaxLayer offset={1} speed={1}>
+				<ParallaxLayer offset={1} speed={2}>
 					<Raket />
 				</ParallaxLayer>
 				<ParallaxLayer offset={2} speed={1}>

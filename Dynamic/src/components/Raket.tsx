@@ -1,31 +1,30 @@
-import raket from "../assets/raket.png";
-import { useInView, animated } from "@react-spring/web";
+import { useState, useEffect } from "react";
+import raketImage from "../assets/raket.png";
 
 function Raket() {
-	const [refSlideIn1, slideIn1] = useInView(
-		() => ({
-			from: {
-				transform: "translate(-100%, 100%)", // Start linksonder (X naar links, Y naar beneden)
-			},
-			to: {
-				transform: "translate(1000%, -100%)", // Eindigt rechtsboven (X naar rechts, Y naar boven)
-			},
-			config: {
-				tension: 10, // Lagere snelheid
-				friction: 50, // Hogere wrijving
-				duration: 4000, // Totale duur van de animatie
-			},
-			reset: false, // Reset de animatie zodat deze opnieuw start
-			loop: false, // Zorgt ervoor dat de animatie continu herhaalt
-		}),
-		{}
-	);
+	const [scrollPosition, setScrollPosition] = useState(0);
 
-	return (
-		<div className="Raket">
-			<animated.img className="img" ref={refSlideIn1} style={slideIn1} src={raket} alt="Raket" />
-		</div>
-	);
+	useEffect(() => {
+		const handleScroll = () => {
+			const position = window.scrollY;
+			setScrollPosition(position);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
+	const raketStyle = {
+		transform: `translateX(${scrollPosition * 0.5}px)`, // Beweging van links naar rechts
+		position: "fixed",
+		transformOrigin: "center",
+		transition: "transform 0.1s linear",
+	};
+
+	return <img className="imageRaket" src={raketImage} alt="Raket" />;
 }
 
 export default Raket;

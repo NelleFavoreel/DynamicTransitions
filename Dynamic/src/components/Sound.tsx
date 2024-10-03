@@ -25,7 +25,18 @@ function Text1() {
 						<img src={foto} alt="foto" />
 					</div>
 				</div>
-				<div></div>
+				<div>
+					<div className="TextPicture1">
+						<h2>
+							Op de opname is vervolgens een pulserend “sonarachtig” geluid te horen. Het missiecontrolecentrum meldt daarna dat het zal onderzoeken waar het mysterieuze geluid vandaan zou kunnen komen. <br /> De opname leidt tot flink wat speculatie
+							bij experts en op sociale media. Onder meer de Canadese astronaut Chris Hadfield toont zich bezorgd. “Er zijn verschillende geluiden die ik liever niet in mijn ruimteschip zou horen.
+						</h2>
+						<h2>
+							Waaronder het geluid dat de Boeing Starliner nu maakt”, deelde hij vanmorgen op X. <br /> <br />
+							Het is niet duidelijk wat het gevolg van de ontdekking zal zijn. Normaal gezien zou de capsule vrijdag onbemand terugkeren naar de aarde en landen in de woestijn van New Mexico.
+						</h2>
+					</div>
+				</div>
 			</div>
 		</>
 	);

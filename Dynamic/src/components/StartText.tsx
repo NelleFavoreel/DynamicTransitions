@@ -3,7 +3,7 @@ function Text1() {
 	const [refSlideIn, slideIn] = useInView(
 		() => ({
 			from: {
-				transform: "translateX(-60%)",
+				transform: "translateX(-40%)",
 			},
 			to: {
 				transform: "translateX(0%)",
@@ -13,12 +13,12 @@ function Text1() {
 				friction: 10,
 			},
 		}),
-		{}
+		{ once: true }
 	);
 	const [refSlideIn1, slideIn1] = useInView(
 		() => ({
 			from: {
-				transform: "translateX(60%)",
+				transform: "translateX(40%)",
 			},
 			to: {
 				transform: "translateX(0%)",
@@ -28,7 +28,7 @@ function Text1() {
 				friction: 10,
 			},
 		}),
-		{}
+		{ once: true }
 	);
 
 	return (

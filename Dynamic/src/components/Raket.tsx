@@ -17,13 +17,6 @@ function Raket() {
 		};
 	}, []);
 
-	const raketStyle = {
-		transform: `translateX(${scrollPosition * 0.5}px)`, // Beweging van links naar rechts
-		position: "fixed",
-		transformOrigin: "center",
-		transition: "transform 0.1s linear",
-	};
-
 	return <img className="imageRaket" src={raketImage} alt="Raket" />;
 }
 

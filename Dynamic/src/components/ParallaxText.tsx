@@ -3,10 +3,10 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Text1 from "./StartText";
 import Raket from "./Raket";
 import Animation from "../js/Animation";
-import Image from "../assets/earthWhole.jpg";
 import Text2 from "./Explenation";
 import NewScreen from "./NewScreen";
 import Text3 from "./Sound";
+import Image from "../assets/Background.webp";
 
 function ParallaxComponent() {
 	const [showNewScreen, setShowNewScreen] = useState(false);
@@ -21,10 +21,12 @@ function ParallaxComponent() {
 
 			<Parallax className="parallax" pages={5} style={{ top: "0", left: "0" }}>
 				<ParallaxLayer offset={0} speed={0}>
-					<div className="header">
-						<Animation />
+					<div className="home">
+						<img src={Image} alt="" />
+						<div className="header">
+							<Animation />
+						</div>
 					</div>
-					<img className="image" src={Image} alt="Earth" />
 				</ParallaxLayer>
 				<ParallaxLayer offset={1} speed={0}>
 					<Text1 />
@@ -50,6 +52,7 @@ function ParallaxComponent() {
 				>
 					<button onClick={() => setShowNewScreen(true)} className="button">
 						Wat doet dat met een mens?
+						<span className="material-icons">arrow_forward</span>
 					</button>
 				</ParallaxLayer>
 			</Parallax>

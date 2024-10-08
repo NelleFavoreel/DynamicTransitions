@@ -12,7 +12,7 @@ function NewScreen({ onClose }) {
 	return (
 		<div className="new-screen" style={{ position: "relative", overflow: "hidden" }}>
 			<div style={{ position: "relative", zIndex: 1, padding: "20px", textAlign: "center" }}>
-				<h2 className="animate__animated animate__rotateIn">2 grote problemen</h2>
+				<h2 className="animate__animated animate__bounceInDown">2 Grote problemen</h2>
 				<div className="newScreenDiv">
 					<div>
 						<h2>Tijdsbesef</h2>

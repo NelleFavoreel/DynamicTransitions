@@ -7,8 +7,8 @@ function Text1() {
 			<div className="textFlex1">
 				<div>
 					<div className="animatieText">
-						<h1 className="animatedTitle" data-text="Vreemde geluiden">
-							Vreemde geluiden
+						<h1 className="animatedTitle" data-text="Geluiden">
+							Geluiden
 						</h1>
 					</div>
 					<div className="TextPicture">

@@ -11,6 +11,10 @@ h3 {
 	font-weight: 100;
 	font-size: 20px;
 }
+h2 {
+	font-weight: 100;
+	font-size: 20px;
+}
 .image {
 	width: 800px;
 	margin-left: 50%;
@@ -23,10 +27,24 @@ h3 {
 	transform: translateY(-50%);
 }
 
+.home {
+	height: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+.home img {
+	width: 100%;
+	object-fit: cover;
+}
 .header {
-	margin-left: 10%;
-	margin-top: 400px;
-	font-size: 40px;
+	font-size: 60px;
+	color: rgb(106, 106, 250);
+	position: absolute;
+	top: 30%;
+	margin-left: -10%;
+	z-index: 10;
 }
 .textFlex {
 	font-size: 17px;
@@ -56,7 +74,7 @@ h2.right {
 	font-size: 100;
 }
 .rightDiv {
-	margin: 250px 100px 0px 100px;
+	margin: 250px 20% 0px 100px;
 }
 
 .overlay {
@@ -90,6 +108,7 @@ h2.right {
 }
 .newScreenDiv {
 	display: flex;
+	margin-bottom: 100px;
 }
 .new-screen h2 {
 	font-size: 50px;
@@ -103,10 +122,17 @@ h2.right {
 	text-align: left;
 	margin: 0px 90px;
 }
+
 .button {
 	color: black;
 	border: 0;
 	background-color: rgb(106, 106, 250);
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+}
+.material-icons {
+	width: 50px;
 	font-size: 30px;
 }
 
@@ -114,8 +140,6 @@ h2.right {
 	position: relative;
 	color: black;
 	font-size: 50px;
-	-webkit-text-stroke: 0.5px rgb(106, 106, 250);
-	text-transform: uppercase;
 }
 .animatieText {
 	display: flex;
@@ -129,10 +153,8 @@ h2.right {
 	width: 20%;
 	height: 100%;
 	color: rgb(106, 106, 250);
-	-webkit-text-stroke: 0px rgb(106, 106, 250);
 	border-right: 2px solid rgb(106, 106, 250);
 	overflow: hidden;
-
 	animation: animate 6s linear infinite;
 }
 @keyframes animate {

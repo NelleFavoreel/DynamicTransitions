@@ -49,7 +49,7 @@ function ParallaxComponent() {
 					}}
 				>
 					<button onClick={() => setShowNewScreen(true)} className="button">
-						Wie zit er vast?
+						Wat doet dat met een mens?
 					</button>
 				</ParallaxLayer>
 			</Parallax>

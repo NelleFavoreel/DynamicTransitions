@@ -52,3 +52,4 @@ export default tseslint.config({
 ##Bronnen
 
 https://www.youtube.com/watch?v=ccO2B40zkv4
+https://animate.style/

@@ -6,10 +6,11 @@ import Animation from "../js/Animation";
 import Text2 from "./Explenation";
 import NewScreen from "./NewScreen";
 import Text3 from "./Sound";
-import Image from "../assets/Background.webp";
+import Image from "../assets/Background copy.webp";
 import End from "./End";
 import Earth from "./Earth";
 import Iss from "./Iss";
+import ParticlesBackground from "./ParticlesBackground";
 
 function ParallaxComponent() {
 	const [showNewScreen, setShowNewScreen] = useState(false);
@@ -33,6 +34,7 @@ function ParallaxComponent() {
 
 	return (
 		<div>
+			<ParticlesBackground />
 			{showNewScreen && (
 				<div className="overlay">
 					<NewScreen onClose={handleClose} />

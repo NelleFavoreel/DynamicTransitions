@@ -21,18 +21,17 @@ h2 {
 	margin-top: -700px;
 }
 .imageRaket {
-	margin-top: 50%;
+	margin-top: 45%;
 	width: 80%;
-	margin-left: 20%;
+	margin-left: 10%;
 	transform: translateY(-50%);
 }
 
 .home {
-	height: 100%;
+	height: 120%;
 	position: relative;
 	display: flex;
 	justify-content: center;
-	overflow: hidden;
 }
 .home img {
 	width: 100%;
@@ -40,10 +39,10 @@ h2 {
 }
 .header {
 	font-size: 60px;
-	color: rgb(106, 106, 250);
+	color: #087dbd;
 	position: absolute;
 	top: 30%;
-	margin-left: -10%;
+	margin-left: -7%;
 	z-index: 10;
 }
 .textFlex {
@@ -126,10 +125,38 @@ h2.right {
 .button {
 	color: black;
 	border: 0;
-	background-color: rgb(106, 106, 250);
+	background-color: #087dbd;
 	font-size: 30px;
 	display: flex;
 	align-items: center;
+}
+.button2 {
+	color: black;
+	border: 0;
+	background-color: #087dbd;
+	font-size: 30px;
+}
+
+.material-icons {
+	margin-left: 10px;
+}
+
+.circle-overlay {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	background-color: black;
+	border-radius: 50%;
+	z-index: 1;
+	transform: translate(-50%, -50%);
+	transition: width 1s ease-in-out, height 1s ease-in-out;
+}
+
+.circle-overlay.expand {
+	width: 200vw; /* Tweemaal de breedte van de viewport om alles te bedekken */
+	height: 200vh; /* Tweemaal de hoogte van de viewport om alles te bedekken */
 }
 .material-icons {
 	width: 50px;
@@ -152,8 +179,8 @@ h2.right {
 	left: 0;
 	width: 20%;
 	height: 100%;
-	color: rgb(106, 106, 250);
-	border-right: 2px solid rgb(106, 106, 250);
+	color: #087dbd;
+	border-right: 2px solid #087dbd;
 	overflow: hidden;
 	animation: animate 6s linear infinite;
 }
@@ -204,4 +231,24 @@ h2.right {
 }
 .TextPicture1 h2:nth-of-type(1) {
 	margin-right: 50px;
+}
+
+.earthPng img {
+	width: 30%;
+	margin-left: 60%;
+}
+.IssPng img {
+	width: 20%;
+	margin-left: 40%;
+}
+.End {
+	background-image: url(../src/assets/starsBackground.jpg);
+	width: 100%;
+	height: 180%;
+	margin-top: -20%;
+	display: flex; /* Voegt flexbox toe om centreren mogelijk te maken */
+	justify-content: center; /* Center horizontaal */
+	align-items: center; /* Center verticaal */
+	color: white; /* Tekstkleur */
+	text-align: center; /* Center tekst */
 }

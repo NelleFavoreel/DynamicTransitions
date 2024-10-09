@@ -1,17 +1,25 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import "animate.css";
 
 function NewScreen({ onClose }) {
-	const imgRef = useRef(null);
+	// Ref aanmaken om het doelwit te identificeren
+	const imgRef = useRef<HTMLDivElement | null>(null);
 
+	// GSAP animatie alleen uitvoeren als imgRef succesvol is geïnitialiseerd
 	useEffect(() => {
-		gsap.fromTo(imgRef.current, { opacity: 0 }, { opacity: 1, duration: 1 });
+		if (imgRef.current) {
+			gsap.fromTo(imgRef.current, { opacity: 0 }, { opacity: 1, duration: 1 });
+		} else {
+			console.error("imgRef is null or undefined.");
+		}
 	}, []);
 
 	return (
 		<div className="new-screen" style={{ position: "relative", overflow: "hidden" }}>
-			<div style={{ position: "relative", zIndex: 1, padding: "20px", textAlign: "center" }}>
+			<div
+				style={{ position: "relative", zIndex: 1, padding: "20px", textAlign: "center" }}
+				ref={imgRef} // Hier wordt de ref toegewezen aan het juiste element
+			>
 				<h2 className="animate__animated animate__bounceInDown">2 Grote problemen</h2>
 				<div className="newScreenDiv">
 					<div>
@@ -35,7 +43,7 @@ function NewScreen({ onClose }) {
 						</h3>
 					</div>
 				</div>
-				<button className="button" onClick={onClose}>
+				<button className="button2" onClick={onClose}>
 					Sluit
 				</button>
 			</div>

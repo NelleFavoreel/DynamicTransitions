@@ -7,19 +7,41 @@ import Text2 from "./Explenation";
 import NewScreen from "./NewScreen";
 import Text3 from "./Sound";
 import Image from "../assets/Background.webp";
+import End from "./End";
+import Earth from "./Earth";
+import Iss from "./Iss";
 
 function ParallaxComponent() {
 	const [showNewScreen, setShowNewScreen] = useState(false);
+	const [startAnimation, setStartAnimation] = useState(false);
+
+	const handleClick = () => {
+		// Start de animatie
+		setStartAnimation(true);
+
+		// Wacht even voordat je het nieuwe scherm toont
+		setTimeout(() => {
+			setShowNewScreen(true);
+		}, 1000); // Dit is afhankelijk van de duur van de animatie
+	};
+
+	const handleClose = () => {
+		// Stop de animatie en sluit het nieuwe scherm
+		setShowNewScreen(false);
+		setStartAnimation(false);
+	};
 
 	return (
 		<div>
 			{showNewScreen && (
 				<div className="overlay">
-					<NewScreen onClose={() => setShowNewScreen(false)} />
+					<NewScreen onClose={handleClose} />
 				</div>
 			)}
 
-			<Parallax className="parallax" pages={5} style={{ top: "0", left: "0" }}>
+			<div className={`circle-overlay ${startAnimation ? "expand" : ""}`}></div>
+
+			<Parallax className="parallax" pages={6} style={{ top: "0", left: "0" }}>
 				<ParallaxLayer offset={0} speed={0}>
 					<div className="home">
 						<img src={Image} alt="" />
@@ -50,11 +72,22 @@ function ParallaxComponent() {
 						height: "100vh",
 					}}
 				>
-					<button onClick={() => setShowNewScreen(true)} className="button">
+					<button onClick={handleClick} className="button">
 						Wat doet dat met een mens?
 						<span className="material-icons">arrow_forward</span>
 					</button>
 				</ParallaxLayer>
+				<div className="EndBackground">
+					<ParallaxLayer offset={5} speed={0}>
+						<End></End>
+					</ParallaxLayer>
+					<ParallaxLayer offset={5} speed={1}>
+						<Earth></Earth>
+					</ParallaxLayer>
+					<ParallaxLayer offset={5} speed={2}>
+						<Iss></Iss>
+					</ParallaxLayer>
+				</div>
 			</Parallax>
 		</div>
 	);

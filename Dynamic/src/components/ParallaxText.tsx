@@ -77,17 +77,15 @@ function ParallaxComponent() {
 						<span className="material-icons">arrow_forward</span>
 					</button>
 				</ParallaxLayer>
-				<div className="EndBackground">
-					<ParallaxLayer offset={5} speed={0}>
-						<End></End>
-					</ParallaxLayer>
-					<ParallaxLayer offset={5} speed={1}>
-						<Earth></Earth>
-					</ParallaxLayer>
-					<ParallaxLayer offset={5} speed={2}>
-						<Iss></Iss>
-					</ParallaxLayer>
-				</div>
+				<ParallaxLayer offset={5} speed={0}>
+					<End></End>
+				</ParallaxLayer>
+				<ParallaxLayer offset={5} speed={1}>
+					<Earth></Earth>
+				</ParallaxLayer>
+				<ParallaxLayer offset={5} speed={0}>
+					<Iss />
+				</ParallaxLayer>
 			</Parallax>
 		</div>
 	);

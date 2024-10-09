@@ -5,17 +5,17 @@ function Earth() {
 	const [refSlideIn, slideIn] = useInView(
 		() => ({
 			from: {
-				transform: "translateX(-40%)",
+				transform: "translateX(90%) translateY(100%) ",
 			},
 			to: {
-				transform: "translateX(0%)",
+				transform: "translateX(0%) translateY(10%) ",
 			},
 			config: {
 				tension: 10,
 				friction: 10,
 			},
-		}),
-		{ once: true }
+		})
+		// { once: true }
 	);
 
 	return (

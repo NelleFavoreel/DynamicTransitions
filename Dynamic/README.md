@@ -54,3 +54,4 @@ export default tseslint.config({
 https://www.youtube.com/watch?v=ccO2B40zkv4
 https://animate.style/
 https://www.eoswetenschap.eu/psyche-brein/onverwacht-vast-de-ruimte-wat-doet-dat-met-een-mens
+https://chatgpt.com/share/67067529-2014-8004-a101-fa22fc1c130e

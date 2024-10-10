@@ -49,6 +49,24 @@ export default tseslint.config({
 });
 ```
 
+## Uitleg
+
+In dit project moest ik een onderwerp van het internet kiezen en daar een kleine website over maken met verschillende animaties. Ik heb gekozen voor het thema van astronauten die vastzitten in de ruimte.
+
+Verschillende antimaties:
+
+- Particles op de achtergrond (particles.js)
+- Typewriter-effect voor de titel (CodePen)
+- Inschuivende tekst (React)
+- Scroll-animatie naar de volgende pagina met een raket (React)
+- Fade-in effect voor de aarde (GSAP)
+- Smooth scrolling op de pagina (GSAP)
+- Geanimeerde titel (YouTube-tutorial)
+- Geanimeerde button (ChatGPT + SliderRevolution)
+- Geanimeerde titel (CSS-animaties)
+- Overlay-tekst met fade-in effect (GSAP)
+- Geanimeerde PNG's (React)
+
 ## Bronnen
 
 - [Animation Text](https://www.youtube.com/watch?v=ccO2B40zkv4)
@@ -60,3 +78,4 @@ export default tseslint.config({
 - [Particles](https://vincentgarreau.com/particles.js/)
 - [Gsap](https://gsap.com/docs/v3/)
 - [Codepen (Typemachine animation)](https://codepen.io/caio/pen/ZOjewG)
+- [Overlay button rond](https://www.sliderrevolution.com/resources/css-ripple-effect/)

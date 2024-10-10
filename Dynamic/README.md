@@ -49,11 +49,14 @@ export default tseslint.config({
 });
 ```
 
-##Bronnen
+## Bronnen
 
-https://www.youtube.com/watch?v=ccO2B40zkv4
-https://animate.style/
-https://www.eoswetenschap.eu/psyche-brein/onverwacht-vast-de-ruimte-wat-doet-dat-met-een-mens
-https://chatgpt.com/share/67067529-2014-8004-a101-fa22fc1c130e
-https://vincentgarreau.com/particles.js/
-https://chatgpt.com/share/67067ec4-a2ec-8004-b94d-d73aac8914bb
+- [Animation Text](https://www.youtube.com/watch?v=ccO2B40zkv4)
+- [Css Animations](https://animate.style/)
+- [Krantenartikel onderwerp](https://www.eoswetenschap.eu/psyche-brein/onverwacht-vast-de-ruimte-wat-doet-dat-met-een-mens)
+- [Krantenartikel onderwerp](https://www.kidsweek.nl/nieuws/astronauten-zitten-vast-in-ruimtestation-en-kunnen-misschien-volgend-jaar-pas-terug~12d225c)
+- [ChatGPT vragen](https://chatgpt.com/share/67067529-2014-8004-a101-fa22fc1c130e)
+- [ChatGPT vragen](https://chatgpt.com/share/67067ec4-a2ec-8004-b94d-d73aac8914bb)
+- [Particles](https://vincentgarreau.com/particles.js/)
+- [Gsap](https://gsap.com/docs/v3/)
+- [Codepen (Typemachine animation)](https://codepen.io/caio/pen/ZOjewG)

@@ -49,6 +49,26 @@ export default tseslint.config({
 });
 ```
 
+## Instalatie
+
+Clone repository
+
+```
+https://github.com/NelleFavoreel/DynamicTransitions.git
+```
+
+Ga naar de juiste map van het prject
+
+```
+npm install
+```
+
+Project starten
+
+```
+npm run dev
+```
+
 ## Uitleg
 
 In dit project moest ik een onderwerp van het internet kiezen en daar een kleine website over maken met verschillende animaties. Ik heb gekozen voor het thema van astronauten die vastzitten in de ruimte.

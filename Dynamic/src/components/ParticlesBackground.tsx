@@ -1,3 +1,5 @@
+// Code van https://vincentgarreau.com/particles.js/
+
 import React, { useEffect } from "react";
 
 const ParticlesBackground: React.FC = () => {
